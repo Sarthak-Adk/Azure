@@ -28,7 +28,7 @@ import Teams from "./Team";
 const About = () => {
   return (
     <>
-      <div className="">
+      <div className="pt-[65px]">
         <div
           className="h-[620px] bg-gray-300"
           style={{
@@ -116,10 +116,10 @@ const About = () => {
           {/* Card 1 */}
           <div className="relative w-[400px] overflow-hidden bg-white shadow-[0px_0px_5px_#7F8CAA] py-4 px-8 rounded-lg group cursor-pointer">
             {/* Sliding background */}
-            <div className="absolute inset-0 w-0 bg-[#113F67] group-hover:w-full transition-all duration-500 ease-in-out"></div>
+            <div className="absolute inset-0 w-0 bg-[#db4961] group-hover:w-full transition-all duration-500 ease-in-out"></div>
 
             {/* Content */}
-            <div className="relative z-10">
+            <div className="relative z-0">
               <FontAwesomeIcon
                 icon={faGlobe}
                 className="text-[#fd0d34] text-3xl pb-2 group-hover:text-white transition-colors duration-500"
@@ -136,8 +136,8 @@ const About = () => {
 
           {/* Card 2 */}
           <div className="relative w-[400px] overflow-hidden bg-white shadow-[0px_0px_5px_#7F8CAA] py-4 px-8 rounded-lg group cursor-pointer">
-            <div className="absolute inset-0 w-0 bg-[#113F67] group-hover:w-full transition-all duration-500 ease-in-out"></div>
-            <div className="relative z-10">
+            <div className="absolute inset-0 w-0 bg-[#db4961] group-hover:w-full transition-all duration-500 ease-in-out"></div>
+            <div className="relative z-9">
               <FontAwesomeIcon
                 icon={faGlobe}
                 className="text-[#fd0d34] text-3xl pb-2 group-hover:text-white transition-colors duration-500"
@@ -154,8 +154,8 @@ const About = () => {
 
           {/* Card 3 */}
           <div className="relative w-[400px] overflow-hidden bg-white shadow-[0px_0px_5px_#7F8CAA] py-4 px-8 rounded-lg group cursor-pointer">
-            <div className="absolute inset-0 w-0 bg-[#113F67] group-hover:w-full transition-all duration-500 ease-in-out"></div>
-            <div className="relative z-10">
+            <div className="absolute inset-0 w-0 bg-[#db4961] group-hover:w-full transition-all duration-500 ease-in-out"></div>
+            <div className="relative z-9">
               <FontAwesomeIcon
                 icon={faGlobe}
                 className="text-[#fd0d34] text-3xl pb-2 group-hover:text-white transition-colors duration-500"
