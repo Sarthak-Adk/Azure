@@ -6,8 +6,10 @@ import {
   faLightbulb,
   faUsers,
   faBullseye,
+  faRocket
 } from "@fortawesome/free-solid-svg-icons";
-import aboutUsHeroImage from "../assets/aboutusheroimage.jpg";
+import { faSmile } from "@fortawesome/free-regular-svg-icons";
+import aboutUsHeroImage from "../assets/aboutusheroimage3.avif";
 import aboutUsHeroImage2 from "../assets/aboutusheroimage2.jpg";
 import aboutUsCoding1 from "../assets/aboutuscoding1.jpg";
 import aboutUsCoding2 from "../assets/aboutuscoding2.jpg";
@@ -28,28 +30,28 @@ const About = () => {
     <>
       <div className="">
         <div
-          className="h-[600px] bg-gray-300"
+          className="h-[620px] bg-gray-300"
           style={{
             clipPath: "polygon(0% 0%, 100% 0%, 100% 85%, 70% 100%, 0% 87.5%)",
           }}
         >
           <div
-            className="bg-cover bg-center h-[520px] flex items-center px-[150px] text-white"
+            className="bg-cover bg-center h-[540px] flex items-center px-[150px] text-white"
             style={{
               backgroundImage: `url(${aboutUsHeroImage})`,
               clipPath:
                 "polygon(0% 0%, 100% 0%, 100% 90%, 70% 100%, 40% 90%, 0% 100%)",
             }}
           >
-               <div className="absolute inset-0 bg-black opacity-10"></div>
+               <div className="absolute inset-0 bg-black opacity-70"></div>
             <div className="w-[500px]">
-              <p className="text-4xl underline font-bold pb-5 text-[#fd0d34]">
+              <p className="relative text-4xl underline font-bold pb-5 text-[#fd0d34]">
                 About Us
               </p>
-              <p className="text-6xl pb-4">
+              <p className=" relative text-6xl pb-4">
                 Unleashing Potential, Building the Future of Tech
               </p>
-              <p className="text-gray-400 pb-5">
+              <p className="relative text-gray-400 pb-5">
                 We believe that coding is more than just writing lines of
                 code—it's about creating, learning, and growing together. Join
                 us in shaping a better tomorrow through technology.
@@ -58,7 +60,7 @@ const About = () => {
                 <Link to="/" className="pr-2 relative">
                   Home
                 </Link>{" "}
-                <span className="text-[#fd0d34]">&rarr;</span>{" "}
+                <span className="text-[#fd0d34] relative">&rarr;</span>{" "}
                 <Link to="/about" className="pl-2 text-[#fd0d34] relative">
                   About
                 </Link>
@@ -282,7 +284,7 @@ const About = () => {
 
           {/* Right Section */}
           <div>
-            <h2 className="text-5xl font-bold pb-4">
+            <h2 className="text-5xl font-bold pb-8">
               Who We <span className="text-[#fd0d34]">Are ?</span>
             </h2>
             <div className="text-lg pb-4">
@@ -327,6 +329,28 @@ const About = () => {
             </button>
           </div>
         </div>
+        {/* <div className="flex px-[140px] justify-evenly my-20">
+            <div className="flex flex-col justify-center items-center ">
+                <p className="font-bold text-[36px] text-[#fd0d34]">600+</p>
+                <p className="text-lg pb-2 font-semibold">Satisfied Clients</p>
+                <FontAwesomeIcon icon={faSmile} className="text-3xl text-[#fd0d34]"/>
+            </div>
+             <div className="flex flex-col justify-center items-center ">
+                <p className="font-bold text-[36px] text-[#fd0d34]">200+</p>
+                <p className="text-lg pb-2 font-semibold">Project Completed</p>
+                <FontAwesomeIcon icon={faSmile} className="text-3xl text-[#fd0d34]"/>
+            </div>
+             <div className="flex flex-col justify-center items-center ">
+                <p className="font-bold text-[36px] text-[#fd0d34]">210+</p>
+                <p className="text-lg pb-2 font-semibold">Project Launched</p>
+                <FontAwesomeIcon icon={faRocket} className="text-3xl text-[#fd0d34]"/>
+            </div>
+             <div className="flex flex-col justify-center items-center ">
+                <p className="font-bold text-[36px] text-[#fd0d34]">12+</p>
+                <p className="text-lg pb-2 font-semibold">Years Completed</p>
+                <FontAwesomeIcon icon={faSmile} className="text-3xl text-[#fd0d34]"/>
+            </div>
+        </div> */}
         <div className="px-[150px] py-10">
           <h1 className="text-center text-5xl font-bold">
             Powerful Features to Enhance
