@@ -41,8 +41,9 @@ const About = () => {
                 "polygon(0% 0%, 100% 0%, 100% 90%, 70% 100%, 40% 90%, 0% 100%)",
             }}
           >
+               <div className="absolute inset-0 bg-black opacity-10"></div>
             <div className="w-[500px]">
-              <p className="text-4xl underline font-bold pb-5 text-orange-300">
+              <p className="text-4xl underline font-bold pb-5 text-[#fd0d34]">
                 About Us
               </p>
               <p className="text-6xl pb-4">
@@ -54,37 +55,39 @@ const About = () => {
                 us in shaping a better tomorrow through technology.
               </p>
               <p>
-                <Link to="/" className="pr-2 ">
+                <Link to="/" className="pr-2 relative">
                   Home
                 </Link>{" "}
-                <span className="text-orange-300">&rarr;</span>{" "}
-                <Link to="/about" className="pl-2 text-orange-300">
+                <span className="text-[#fd0d34]">&rarr;</span>{" "}
+                <Link to="/about" className="pl-2 text-[#fd0d34] relative">
                   About
                 </Link>
               </p>
             </div>
           </div>
         </div>
-        <div className="px-[140px] flex gap-20 items-center py-24 h-[700px]">
+        <div className="px-[140px] flex gap-20 items-center py-22 h-[700px]">
           <div className="w-[600px]">
             <div>
-              <div className="text-5xl text-orange-400 font-bold">
+              <div className="text-5xl text-[#fd0d34] font-bold">
                 Providing full range{" "}
               </div>
-              <span className="text-5xl text-blue-300 font-bold">
+              <span className="text-5xl font-bold">
                 of transportation
               </span>
             </div>
             <div className="pt-8 text-xl pb-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              quod consequatur temporibus provident numquam
+              quod consequatur temporibus provident numquam Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolores nam explicabo placeat.
+              
             </div>
             <div className=" text-xl pb-14">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
               quod consequatur temporibus provident numquam labore dolorem
               laborum tempore distinctio autem
             </div>
-            <button className="bg-orange-400 text-white px-8 py-2 cursor-pointer text-lg rounded-md">
+            <button className="bg-[#fd0d34] text-white px-8 py-2 cursor-pointer text-lg rounded-md">
               Learn More &rarr;
             </button>
           </div>
@@ -97,10 +100,10 @@ const About = () => {
             <img
               src={aboutUsCoding2}
               alt=""
-              className="w-[300px] h-[200px] object-cover rounded-xl absolute bottom-15 right-0"
+              className="w-[300px] h-[200px] object-cover rounded-xl absolute bottom-20 right-0"
             />
             <div className="shadow-[0px_0px_5px_#7F8CAA] inline-block p-4 rounded-md  absolute top-65 right-62 bg-white">
-              <p className="text-orange-400 text-center text-3xl font-bold">
+              <p className="text-[#fd0d34] text-center text-3xl font-bold">
                 20 +
               </p>
               <p>Year Experience</p>
@@ -117,7 +120,7 @@ const About = () => {
             <div className="relative z-10">
               <FontAwesomeIcon
                 icon={faGlobe}
-                className="text-orange-400 text-3xl pb-2 group-hover:text-white transition-colors duration-500"
+                className="text-[#fd0d34] text-3xl pb-2 group-hover:text-white transition-colors duration-500"
               />
               <h4 className="text-2xl text-slate-600 font-bold pb-2 group-hover:text-white transition-colors duration-500">
                 Experience & Expertise
@@ -135,7 +138,7 @@ const About = () => {
             <div className="relative z-10">
               <FontAwesomeIcon
                 icon={faGlobe}
-                className="text-orange-400 text-3xl pb-2 group-hover:text-white transition-colors duration-500"
+                className="text-[#fd0d34] text-3xl pb-2 group-hover:text-white transition-colors duration-500"
               />
               <h4 className="text-2xl text-slate-600 font-bold pb-2 group-hover:text-white transition-colors duration-500">
                 Innovation & Creativity
@@ -153,7 +156,7 @@ const About = () => {
             <div className="relative z-10">
               <FontAwesomeIcon
                 icon={faGlobe}
-                className="text-orange-400 text-3xl pb-2 group-hover:text-white transition-colors duration-500"
+                className="text-[#fd0d34] text-3xl pb-2 group-hover:text-white transition-colors duration-500"
               />
               <h4 className="text-2xl text-slate-600 font-bold pb-2 group-hover:text-white transition-colors duration-500">
                 Trusted Solutions
@@ -196,8 +199,8 @@ const About = () => {
                   Stay inspired and keep learning with us.
                 </p>
                 <p>
-                  <Link to="/blog">
-                    <button className="bg-orange-400 text-lg px-8 py-2  rounded-md cursor-pointer hover:bg-orange-300">
+                  <Link to="/blogs">
+                    <button className="bg-[#fd0d34] text-lg px-8 py-2  rounded-md cursor-pointer hover:bg-[#ea4762]">
                       Explore Now &rarr;
                     </button>
                   </Link>{" "}
@@ -214,7 +217,7 @@ const About = () => {
                 className="relative w-[270px] h-[340px] mb-7 bg-cover bg-center rounded-md "
                 style={{ backgroundImage: `url(${innovation})` }}
               >
-                <div className="absolute inset-0 rounded-md p-10 flex flex-col justify-center bg-[linear-gradient(to_top,rgba(255,128,64,0.9),rgba(255,128,64,0.9))]">
+                <div className="absolute inset-0 rounded-md p-10 flex flex-col justify-center items-center bg-[linear-gradient(to_top,rgba(255,128,64,0.9),rgba(255,128,64,0.9))]">
                   <FontAwesomeIcon
                     icon={faLightbulb}
                     className="text-5xl pb-4"
@@ -234,7 +237,7 @@ const About = () => {
                 className="relative w-[270px] h-[324px] bg-cover bg-center rounded-md"
                 style={{ backgroundImage: `url(${aboutUsCoding1})` }}
               >
-                <div className="absolute inset-0 rounded-md p-10 flex flex-col justify-center bg-[linear-gradient(to_top,rgba(19,29,79,0.9),rgba(19,29,79,0.9))]">
+                <div className="absolute inset-0 rounded-md p-10 flex flex-col justify-center items-center bg-[linear-gradient(to_top,rgba(19,29,79,0.9),rgba(19,29,79,0.9))]">
                   <FontAwesomeIcon
                     icon={faBullseye}
                     className="text-5xl pb-4"
@@ -263,7 +266,7 @@ const About = () => {
                 className="relative w-[270px] h-[340px] bg-cover bg-center rounded-md"
                 style={{ backgroundImage: `url(${chatting})` }}
               >
-                <div className="absolute inset-0 rounded-md p-10 flex flex-col justify-center bg-[linear-gradient(to_top,rgba(22,163,74,0.9),rgba(22,163,74,0.9))]">
+                <div className="absolute inset-0 rounded-md p-10 flex flex-col justify-center items-center bg-[linear-gradient(to_top,rgba(22,163,74,0.9),rgba(22,163,74,0.9))]">
                   <FontAwesomeIcon icon={faUsers} className="text-5xl pb-4" />
                   <h1 className="text-center font-bold text-xl pb-2">
                     Team Messaging
@@ -280,7 +283,7 @@ const About = () => {
           {/* Right Section */}
           <div>
             <h2 className="text-5xl font-bold pb-4">
-              Who We <span className="text-orange-400">Are ?</span>
+              Who We <span className="text-[#fd0d34]">Are ?</span>
             </h2>
             <div className="text-lg pb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
@@ -294,32 +297,32 @@ const About = () => {
             </div>
             <div className="text-lg flex flex-col gap-3">
               <p>
-                <span className="text-orange-400 font-bold mx-2 ">
+                <span className="text-[#fd0d34] font-bold mx-2 ">
                   &#10003;
                 </span>{" "}
                 Offer Team Collaboration
               </p>
               <p>
-                <span className="text-orange-400 font-bold mx-2 ">
+                <span className="text-[#fd0d34] font-bold mx-2 ">
                   &#10003;
                 </span>{" "}
                 Interaction with Global Mentors
               </p>
 
               <p>
-                <span className="text-orange-400 font-bold mx-2 ">
+                <span className="text-[#fd0d34] font-bold mx-2 ">
                   &#10003;
                 </span>{" "}
                 Rewards for Your Ideas
               </p>
               <p>
-                <span className="text-orange-400 font-bold mx-2 ">
+                <span className="text-[#fd0d34] font-bold mx-2 ">
                   &#10003;
                 </span>{" "}
                 Offer Team Collaboration
               </p>
             </div>
-            <button className="bg-orange-400 text-white px-8 py-2 cursor-pointer rounded-md mt-12 text-lg">
+            <button className="bg-[#fd0d34] text-white px-8 py-2 cursor-pointer rounded-md mt-12 text-lg">
               Learn More <span>&rarr;</span>
             </button>
           </div>
@@ -328,7 +331,7 @@ const About = () => {
           <h1 className="text-center text-5xl font-bold">
             Powerful Features to Enhance
           </h1>
-          <p className="text-center font-bold text-5xl pb-16 text-orange-400">
+          <p className="text-center font-bold text-5xl pb-16 text-[#fd0d34]">
             Your Hackathon
           </p>
           <div className="flex gap-5 pb-5 text-white">
