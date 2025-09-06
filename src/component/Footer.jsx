@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="w-[300px]">
            <h1 className="font-bold text-3xl pb-3 ">AzureDev</h1>
            <p className="text-white"> Maxime quaerat asperiores ab cumque labore eveniet facilis ducimus nemo autem aperiam. labore eveniet facilis ducimus nemo autem aperiam.</p>
-           <div className="pt-5 flex gap-5 items-center">
+           <div className="pt-5 flex gap-5 items-center cursor-pointer">
               <span className="bg-[#fd0d34] px-2 pt-2 pb-2 rounded-full">
                 <FontAwesomeIcon icon={faFacebook} className="text-lg text-white"/>
               </span>
@@ -56,11 +56,7 @@ const Footer = () => {
                  Contact
               </Link>
             </li>
-            <li>
-              <Link to="" className="hover:underline text-white">
-                 Careers
-              </Link>
-            </li>
+           
           </ul>
         </div>
 
