@@ -5,7 +5,7 @@ import Blog from './pages/Blog';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
-import Layout from './component/Layout';
+import Layout from './components/Layout';
 
 const App = () => {
   return (
