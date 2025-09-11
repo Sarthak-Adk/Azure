@@ -30,13 +30,13 @@ const About = () => {
     <>
       <div className="pt-[65px]">
         <div
-          className="h-[620px] bg-gray-300"
+          className="h-[640px] bg-gray-300"
           style={{
             clipPath: "polygon(0% 0%, 100% 0%, 100% 85%, 70% 100%, 0% 87.5%)",
           }}
         >
           <div
-            className="bg-cover bg-center h-[540px] flex items-center px-[150px] text-white"
+            className="bg-cover bg-center h-[560px] flex items-center px-[150px] text-white"
             style={{
               backgroundImage: `url(${aboutUsHeroImage})`,
               clipPath:
@@ -51,7 +51,7 @@ const About = () => {
               <p className=" relative text-6xl pb-4">
                 Unleashing Potential, Building the Future of Tech
               </p>
-              <p className="relative text-gray-400 pb-5">
+              <p className="relative text-gray-200 pb-7">
                 We believe that coding is more than just writing lines of
                 code—it's about creating, learning, and growing together. Join
                 us in shaping a better tomorrow through technology.
